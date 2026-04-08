@@ -1,18 +1,13 @@
-## Getting Started
+# Capstone Course 2023-27
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## Overview
 
-## Folder Structure
+This repository contains practice problems and solutions completed day-by-day for the Capstone Course.
 
-The workspace contains two folders by default, where:
+## Contents
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+- Day-wise problem solutions
+- Code implementations and explanations
+- Practice exercises and challenges
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).

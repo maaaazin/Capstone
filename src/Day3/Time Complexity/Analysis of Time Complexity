@@ -1,0 +1,88 @@
+Simple loop
+for (int i = 0; i < n; i++) {
+    System.out.println(i);
+}
+Time Complexity: O(n)
+
+Nested loops
+for (int i = 0; i < n; i++) {
+    for (int j = 0; j < n; j++) {
+        System.out.println(i + " " + j);
+    }
+}
+Time Complexity: O(n^2)
+
+Nested loops dependent
+for (int i = 0; i < n; i++) {
+    for (int j = 0; j < i; j++) {
+        System.out.println(i + " " + j);
+    }
+}
+Time Complexity: O(n^2)
+
+Logarithmic loop
+for (int i = 1; i < n; i *= 2) {
+    System.out.println(i);
+}
+Time Complexity: O(log n)
+
+Halving loop
+for (int i = n; i > 0; i /= 2) {
+    System.out.println(i);
+}
+Time Complexity: O(log n)
+
+Two independent loops
+for (int i = 0; i < n; i++) {
+    System.out.println(i);
+}
+for (int j = 0; j < n; j++) {
+    System.out.println(j);
+}
+Time Complexity: O(n)
+
+Nested loops with different limits
+for (int i = 0; i < n; i++) {
+    for (int j = 0; j < m; j++) {
+        System.out.println(i + " " + j);
+    }
+}
+Time Complexity: O(n * m)
+
+While loop with increment
+int i = 0;
+while (i < n) {
+    i+= 3;
+}
+Time Complexity: O(n/3) => O(n)
+
+Function inside Loop
+public static void someFunction() {
+    for (int i = 0; i < n; i++) {
+        i++;
+    }
+}
+for (int i = 0; i < n; i++) {
+    someFunction();
+}
+Time Complexity: O(n^2)
+
+Binary Search
+public int binarySearch(int arr[], int target) {
+    int left = 0;
+    int right = arr.length - 1;
+    while (left <= right) {
+        int mid = left + (right - left) / 2;
+        if (arr[mid] == target) {  
+            return mid;
+        } 
+        else if (arr[mid] < target) {
+            left = mid + 1;
+        } 
+        else {
+            right = mid - 1;
+        }
+    }
+    return -1;
+}
+Time Complexity: O(log n)
